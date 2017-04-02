@@ -1,0 +1,236 @@
+\hypertarget{classMONGO}{\section{M\+O\+N\+G\+O Class Reference}
+\label{classMONGO}\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMONGO_a9438bf5a9812cb46554dfbd7f341992f}{init} ()
+\item 
+\hypertarget{classMONGO_a5ea45e9188197bbe88956b1c19a24184}{void {\bfseries mongo\+\_\+reset} ()}\label{classMONGO_a5ea45e9188197bbe88956b1c19a24184}
+
+\item 
+bool \hyperlink{classMONGO_a463df4a5a95c1b6a2f8c2e71b94828d5}{auth\+\_\+team} (char $\ast$team\+\_\+name, string client\+\_\+pass)
+\item 
+void \hyperlink{classMONGO_a0992cdb06d5e843c45e283f8fdd4e514}{insert} (char $\ast$key, char $\ast$data, mongoc\+\_\+collection\+\_\+t $\ast$collection)
+\item 
+void \hyperlink{classMONGO_af80b67e1b026c78e5c105bd09c88e47a}{record\+\_\+team} (char $\ast$team\+\_\+name)
+\item 
+void \hyperlink{classMONGO_ac8b5b4d27ff45f171af831436c2eb9cb}{match\+\_\+status\+\_\+setup} (char $\ast$player1, char $\ast$player2)
+\item 
+void \hyperlink{classMONGO_a8d7eac5d5d239cc4e8c52edfee20ca4a}{update} (char $\ast$key1, char $\ast$key2, char $\ast$key\+\_\+update, char $\ast$\+\_\+\+\_\+update, mongoc\+\_\+collection\+\_\+t $\ast$collection)
+\item 
+void \hyperlink{classMONGO_a2dd95231d18411af37289da2b85dd824}{delete\+\_\+collection} (char $\ast$\+\_\+collection)
+\item 
+void \hyperlink{classMONGO_a602231cc070da56955556fd93d3381f7}{match\+\_\+status} (char $\ast$player1, char $\ast$player2, char status)
+\item 
+void \hyperlink{classMONGO_a8ade973ce7a97d558b4f97c89ac861a3}{record\+\_\+match} (char $\ast$player1, char $\ast$player2, unsigned char $\ast$json, char $\ast$game\+\_\+board)
+\item 
+void \hyperlink{classMONGO_aff2b851fb8f080cc76327a256a482143}{destroy} ()
+\item 
+bool \hyperlink{classMONGO_a14de376ed461fef70d59a1874a43cc1c}{is\+\_\+in\+\_\+match} (char $\ast$player1, char $\ast$player2)
+\item 
+char $\ast$ \hyperlink{classMONGO_a73aeca685c913675727892f3e8ea7716}{find} (char $\ast$query1, char $\ast$query2, char $\ast$field, mongoc\+\_\+collection\+\_\+t $\ast$collection)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMONGO_a463df4a5a95c1b6a2f8c2e71b94828d5}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!auth\+\_\+team@{auth\+\_\+team}}
+\index{auth\+\_\+team@{auth\+\_\+team}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{auth\+\_\+team}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+O\+N\+G\+O\+::auth\+\_\+team (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{team\+\_\+name, }
+\item[{string}]{client\+\_\+pass}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a463df4a5a95c1b6a2f8c2e71b94828d5}
+Authenticates player. Checks hash of players password and players username against the mongo database. S\+H\+A256 is used to find password hash. 
+\begin{DoxyParams}{Parameters}
+{\em team\+\_\+name} & is the players username. \\
+\hline
+{\em client\+\_\+pass} & clients password in plaintext \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if authentication is successfull, false on failure. 
+\end{DoxyReturn}
+\hypertarget{classMONGO_a2dd95231d18411af37289da2b85dd824}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!delete\+\_\+collection@{delete\+\_\+collection}}
+\index{delete\+\_\+collection@{delete\+\_\+collection}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{delete\+\_\+collection}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::delete\+\_\+collection (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{\+\_\+collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a2dd95231d18411af37289da2b85dd824}
+Deletes a collection. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+collection} & collection to be deleted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_aff2b851fb8f080cc76327a256a482143}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!destroy@{destroy}}
+\index{destroy@{destroy}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_aff2b851fb8f080cc76327a256a482143}
+Destroy mongo connection. \hypertarget{classMONGO_a73aeca685c913675727892f3e8ea7716}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!find@{find}}
+\index{find@{find}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ M\+O\+N\+G\+O\+::find (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{query1, }
+\item[{char $\ast$}]{query2, }
+\item[{char $\ast$}]{field, }
+\item[{mongoc\+\_\+collection\+\_\+t $\ast$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a73aeca685c913675727892f3e8ea7716}
+Search for record in mongo databse and return one field according to key. Must be in the form of\+: \{ \char`\"{}query1\char`\"{}\+:\char`\"{}query2\char`\"{}, \char`\"{}.........\char`\"{}, \char`\"{}field\char`\"{}\+:\char`\"{}\+R\+E\+S\+U\+L\+T\char`\"{}, ".......... \} \begin{DoxyReturn}{Returns}
+R\+E\+S\+U\+L\+T. query1, query2, field 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em query1} & and query2 defines the collection to be found in the form of query1\+:query2 \\
+\hline
+{\em query2} & \\
+\hline
+{\em field} & is the key of which data in the given record must be found. \\
+\hline
+{\em collection} & pointer to mongo database. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char array of found data. Or \char`\"{}\+F\+A\+I\+L\char`\"{} if not successful. 
+\end{DoxyReturn}
+\hypertarget{classMONGO_a9438bf5a9812cb46554dfbd7f341992f}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!init@{init}}
+\index{init@{init}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a9438bf5a9812cb46554dfbd7f341992f}
+Initialise connection to mongo database and get required pointers. Deletes old game data from previous competitions. \hypertarget{classMONGO_a0992cdb06d5e843c45e283f8fdd4e514}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!insert@{insert}}
+\index{insert@{insert}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::insert (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{key, }
+\item[{char $\ast$}]{data, }
+\item[{mongoc\+\_\+collection\+\_\+t $\ast$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a0992cdb06d5e843c45e283f8fdd4e514}
+Insert data into the mongo. Data must be a string. 
+\begin{DoxyParams}{Parameters}
+{\em key} & references data to be inserted \\
+\hline
+{\em data} & string of data to be inserted \\
+\hline
+{\em $\ast$collection} & pointer to collection to be accessed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_a14de376ed461fef70d59a1874a43cc1c}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!is\+\_\+in\+\_\+match@{is\+\_\+in\+\_\+match}}
+\index{is\+\_\+in\+\_\+match@{is\+\_\+in\+\_\+match}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{is\+\_\+in\+\_\+match}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+O\+N\+G\+O\+::is\+\_\+in\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{player1, }
+\item[{char $\ast$}]{player2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a14de376ed461fef70d59a1874a43cc1c}
+Checks if player 1 or 2 is in a match already. 
+\begin{DoxyParams}{Parameters}
+{\em player1} & string of first player's name. \\
+\hline
+{\em player2} & string of second player's name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if either player or 2 is in a match. False otherwise. 
+\end{DoxyReturn}
+\hypertarget{classMONGO_a602231cc070da56955556fd93d3381f7}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!match\+\_\+status@{match\+\_\+status}}
+\index{match\+\_\+status@{match\+\_\+status}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{match\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::match\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{player1, }
+\item[{char $\ast$}]{player2, }
+\item[{char}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a602231cc070da56955556fd93d3381f7}
+Update match status of a given match.
+
+A match can be in one of three statuses, in progress, game finished, or not started. Function updates status according to 
+\begin{DoxyParams}{Parameters}
+{\em status.} & \\
+\hline
+{\em player1} & string of player 1's name. \\
+\hline
+{\em player2} & string of player 2's name. \\
+\hline
+{\em status} & char represents status given match should be. 'P' for in progress, 'F' for finished, 'S' for not started. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_ac8b5b4d27ff45f171af831436c2eb9cb}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!match\+\_\+status\+\_\+setup@{match\+\_\+status\+\_\+setup}}
+\index{match\+\_\+status\+\_\+setup@{match\+\_\+status\+\_\+setup}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{match\+\_\+status\+\_\+setup}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::match\+\_\+status\+\_\+setup (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{player1, }
+\item[{char $\ast$}]{player2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_ac8b5b4d27ff45f171af831436c2eb9cb}
+Before the competition starts, for a given match fixture record the status of that match which is \char`\"{}not started\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em player1} & string of player 1's name. \\
+\hline
+{\em player2} & string of player 2's name. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_a8ade973ce7a97d558b4f97c89ac861a3}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!record\+\_\+match@{record\+\_\+match}}
+\index{record\+\_\+match@{record\+\_\+match}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{record\+\_\+match}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::record\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{player1, }
+\item[{char $\ast$}]{player2, }
+\item[{unsigned char $\ast$}]{json, }
+\item[{char $\ast$}]{game\+\_\+board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a8ade973ce7a97d558b4f97c89ac861a3}
+Record game board state of given match in mongo. 
+\begin{DoxyParams}{Parameters}
+{\em player1} & string of first player in match. \\
+\hline
+{\em player2} & string of second player in match.  Game board state in json format. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_af80b67e1b026c78e5c105bd09c88e47a}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!record\+\_\+team@{record\+\_\+team}}
+\index{record\+\_\+team@{record\+\_\+team}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{record\+\_\+team}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::record\+\_\+team (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{team\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_af80b67e1b026c78e5c105bd09c88e47a}
+Record a team in the mongo database which will be live. 
+\begin{DoxyParams}{Parameters}
+{\em team\+\_\+name} & is the name of the team about to compete in the competition. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMONGO_a8d7eac5d5d239cc4e8c52edfee20ca4a}{\index{M\+O\+N\+G\+O@{M\+O\+N\+G\+O}!update@{update}}
+\index{update@{update}!M\+O\+N\+G\+O@{M\+O\+N\+G\+O}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+N\+G\+O\+::update (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{key1, }
+\item[{char $\ast$}]{key2, }
+\item[{char $\ast$}]{key\+\_\+update, }
+\item[{char $\ast$}]{\+\_\+\+\_\+update, }
+\item[{mongoc\+\_\+collection\+\_\+t $\ast$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMONGO_a8d7eac5d5d239cc4e8c52edfee20ca4a}
+Update function which can update data in mongo database of the form key\+:data. 
+\begin{DoxyParams}{Parameters}
+{\em key1} & the key of the data to be updated in given collection. \\
+\hline
+{\em key2} & the data which corresonds to key1 already in the database before update. \\
+\hline
+{\em key\+\_\+update} & is the data to replace the old data with. \\
+\hline
+{\em collection} & pointer to collection to be updated. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mongo.\+h\end{DoxyCompactItemize}

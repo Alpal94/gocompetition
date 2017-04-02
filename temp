@@ -1,0 +1,104 @@
+Listening for 2 players
+PLAYER 0 has just joined
+authentication is successfull for GreatBritain
+PLAYER 1 has just joined
+authentication is successfull for HelloWorld
+
+THE LIVE TEAMS ARE: GreatBritain, HelloWorld, Match for GreatBritain vs HelloWorld in queue
+Match for HelloWorld vs GreatBritain in queue
+CHECKING IF MATCH IS VALID
+COMMAND: GreatBritain:HelloWorld FIELD: status
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: HelloWorld:HelloWorld FIELD: status
+RETURNING FALSE FAIL: FAIL
+COMMAND: HelloWorld:HelloWorld FIELD: status
+RETURNING FALSE FAIL: FAIL
+MATCH COULD START
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+ERROR IN FIND DETECTED
+COMMAND: HelloWorld:GreatBritain FIELD: status
+RETURNING FALSE FAIL: ERROR
+COMMAND: GreatBritain:HelloWorld FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+CHECKING IF MATCH IS VALID
+COMMAND: HelloWorld:GreatBritain FIELD: status
+COMMAND: GreatBritain:HelloWorld FIELD: status
+COMMAND: GreatBritain:
