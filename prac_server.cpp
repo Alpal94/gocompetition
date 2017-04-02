@@ -13,6 +13,8 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include "api.h"
+#include "mongo.h"
+#include "match.h"
 #define no_players 2
 using namespace std;
 
@@ -26,6 +28,11 @@ int main(int argc, char **argv) {
 	int welcomeSocket, socket_, bot_socket;
 	struct sockaddr_in serverAddr;
 	struct sockaddr_storage serverStorage;
+
+	MATCH match;
+	MONGO mongo;
+	mongo.init();
+
 	socklen_t addr_size;
 
 	welcomeSocket = socket(PF_INET, SOCK_STREAM, 0);
@@ -66,7 +73,7 @@ int main(int argc, char **argv) {
 				continue;
 			} else if(pid == 0) {
 					
-				match(socket_, bot_socket);	
+				match.match(socket_, bot_socket, "player", "bot", mongo);
 
 				//Comp Finished
 				buffer[0] == 'C'; buffer[1] == 'F';

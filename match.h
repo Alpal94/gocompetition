@@ -104,7 +104,7 @@ class MATCH {
 			
 			printf(" THE PLAYERS ARE JSON: %s and %s", name_player_1, name_player_2);
 			sprintf(buffer, "move_%d", i);
-			mongo.record_match(name_player_1, name_player_2, buffer, reinterpret_cast<unsigned char*>(board_string));
+			//mongo.record_match(name_player_1, name_player_2, buffer, reinterpret_cast<unsigned char*>(board_string));
 
 
 			//For testing purposes game is limited to 100 turns.
